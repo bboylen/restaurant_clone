@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Playball', cursive;
+  src: url(/assets/fonts/Playball-Regular.tff);
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Playball', cursive;
+  background-color: #8a0000;
+}
+
+.navbar .name {
+  margin: 15px 10px 0px 30px;
+  font-size: 45px;
+}
+.page-tabs {
+  width: 400px;
+  display: flex;
+  flex-wrap: no-wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-right: 50px;
+}
+
+.page-tabs li{
+  padding: 10px 15px;
+  margin-top: 30px;
+  display: inline;
+  font-size: 24px;
+  background-color: #8a0000;
+}
+
+.page-tabs li:hover{
+  background-color: #c2c2c2;
+}
+
+/* main */
+
+main {
+  height: 100%;
+  background-color: #c2c2c2;
+}
+
+.coronavirus {
+  text-align: center;
+}
+.coronavirus img {
+  max-width: 500px;
+  max-height: 400px;
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.home-text {
+  margin-top: 30px;
+  font-size: 26px;
+}
+
+.home-text p{
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
