@@ -22,7 +22,7 @@ body {
 }
 
 .navbar .name {
-  margin: 15px 10px 0px 30px;
+  margin: 15px 10px 5px 30px;
   font-size: 45px;
 }
 .page-tabs {
@@ -44,6 +44,10 @@ body {
 }
 
 .page-tabs li:hover{
+  cursor: pointer;
+}
+
+.page-tabs .selected {
   background-color: #c2c2c2;
 }
 

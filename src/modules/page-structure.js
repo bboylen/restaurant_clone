@@ -22,6 +22,7 @@ function generateNavbar() {
     navList.appendChild(generateNavItem(item));
   }
 
+  navList.children[0].classList.add('selected');
   navbar.appendChild(navList);
 
   return navbar;

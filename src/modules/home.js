@@ -28,7 +28,6 @@ function generateHomeElements() {
 
 function generateHome() {
   let main = document.getElementById("main");
-  console.log(generateHomeElements());
   let elements = generateHomeElements();
   for (let element in elements) {
     main.appendChild(elements[element]);
