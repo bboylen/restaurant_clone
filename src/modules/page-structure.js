@@ -1,7 +1,7 @@
 function generateNavbar() {
   let navbar = document.createElement('header');  
   navbar.classList.add('navbar')
-  
+
   let navbarName = document.createElement('div');
   navbarName.classList.add('name');
   navbarName.textContent = "Covid Cookery"
@@ -27,7 +27,10 @@ function generateNavbar() {
   return navbar;
 }
 
-const generateMain = () => document.createElement('main');
+const generateMain = () => {
+  let main = document.createElement('main');
+  main.id = "main";
+}
 
 function generatePageStructure() {
   document.body.appendChild(generateNavbar());
