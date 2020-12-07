@@ -15,8 +15,8 @@ function generateHomeElements() {
     "Welcome to the Covid Cookery! The world's premiere destination for the 2020 Coronavirus Outbreak themed dishes.", 
     "Rated 3 stars by Michelin and called the \"most novel dining   establishment since Gusteau's\", we are sure you will find something you  love."]
 
-  for (let paragraph in paragraphs) {
-    para = document.createElement('p');
+  for (let paragraph of paragraphs) {
+    let para = document.createElement('p');
     para.textContent = paragraph;
     homeText.appendChild(para);
   }
@@ -29,8 +29,9 @@ function generateHomeElements() {
 function generateHome() {
   let main = document.getElementById("main");
   console.log(generateHomeElements());
-  for (let element in generateHomeElements()) {
-    main.appendChild(element);
+  let elements = generateHomeElements();
+  for (let element in elements) {
+    main.appendChild(elements[element]);
   }
 }
 
