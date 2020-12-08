@@ -1,8 +1,8 @@
 import generatePageStructure from './modules/page-structure.js';
 import generateHome from './modules/home.js';
 
-generatePageStructure();
-generateHome();
+// generatePageStructure();
+// generateHome();
 
 function setListeners() {
   let tabs = document.getElementsByClassName('page-tabs')[0].children;
