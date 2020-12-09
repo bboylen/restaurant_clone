@@ -38,9 +38,23 @@ function generateCard(link, food) {
   return cardDiv;
 }
 
+function generateMenuTitle() {
+  let titleDiv = document.createElement('div');
+  titleDiv.classList.add("menu-title");
+
+  menuTitle = document.createElement('h1');
+  menuTitle.textContent = "Menu";
+  titleDiv.appendChild(menuTitle);
+
+  return titleDiv;
+}
+
 function generateMenu() {
   let main = document.getElementById("main");
 
+  let menuTitle = generateMenuTitle();
+  main.appendChild(menuTitle);
+  
   let menuDiv = document.createElement("div");
   menuDiv.classList.add("menu");
   main.appendChild(menuDiv);
