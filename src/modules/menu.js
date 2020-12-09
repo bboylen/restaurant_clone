@@ -10,7 +10,7 @@ function generateMenuCategory(headingText, link1, food1, link2, food2) {
   itemsDiv.classList.add("items");
   categoryDiv.appendChild(itemsDiv);
 
-  cardData = [
+  let cardData = [
     [link1, food1],
     [link2, food2],
   ];
@@ -42,7 +42,7 @@ function generateMenuTitle() {
   let titleDiv = document.createElement('div');
   titleDiv.classList.add("menu-title");
 
-  menuTitle = document.createElement('h1');
+  let menuTitle = document.createElement('h1');
   menuTitle.textContent = "Menu";
   titleDiv.appendChild(menuTitle);
 
@@ -54,7 +54,7 @@ function generateMenu() {
 
   let menuTitle = generateMenuTitle();
   main.appendChild(menuTitle);
-  
+
   let menuDiv = document.createElement("div");
   menuDiv.classList.add("menu");
   main.appendChild(menuDiv);
