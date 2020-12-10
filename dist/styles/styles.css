@@ -86,11 +86,11 @@ main {
 /* menu */
 
 .menu-title {
-  margin-top: 30px;
   text-align: center;
 }
 
 .menu-title h1 {
+  padding-top: 30px;
   font-size: 72px;
   font-weight: 600;
   font-family: 'Playball', cursive;
@@ -104,11 +104,11 @@ main {
 }
 
 .menu-category {
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .menu-category h3 {
-  font-size: 36px;
+  font-size: 42px;
   font-family: 'Playball', cursive;
 }
 
@@ -124,17 +124,21 @@ main {
   width: 300px;
   height: 400px;
   text-align: center;
-  background-image: url('../assets/images/green_border.png');
+  background-color: #c75050;
   background-size: 300px 400px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
 }
 
 .card img {
   height: 250px;
-  width: 275px;
-  margin: 12px;
+  width: 300px;
+  border-radius: 10px;
 }
 
 .card-bottom {
+  margin-top: 30px;
   font-size: 30px;
   font-weight: 500;
+  background-color: #c75050;
 }
