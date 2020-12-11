@@ -1,10 +1,12 @@
 import generatePageStructure from './modules/page-structure.js';
 import generateHome from './modules/home.js';
 import generateMenu from './modules/menu.js';
+import generateContact from './modules/contact.js';
 
-//generatePageStructure();
+generatePageStructure();
 //generateHome();
 //generateMenu();
+generateContact();
 
 function setListeners() {
   let tabs = document.getElementsByClassName('page-tabs')[0].children;
