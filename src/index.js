@@ -4,9 +4,9 @@ import generateMenu from './modules/menu.js';
 import generateContact from './modules/contact.js';
 
 generatePageStructure();
-//generateHome();
+generateHome();
 //generateMenu();
-generateContact();
+//generateContact();
 
 function setListeners() {
   let tabs = document.getElementsByClassName('page-tabs')[0].children;
@@ -21,7 +21,25 @@ function setListeners() {
     tabSelected.classList.add('selected');
     let notSelected = tabs.filter(tab => tab != tabSelected)
     for (let tab of notSelected) tab.classList.remove('selected');
+
+    populatePage(tabSelected.textContent);
   }
 }
 
+function populatePage(tab) {
+  let main = document.getElementById("main");
+  main.querySelectorAll('*').forEach(n => n.remove());
+
+  switch(tab) {
+    case "Home":
+      generateHome();
+      break;
+    case "Menu":
+      generateMenu();
+      break;
+    case "Contact":
+      generateContact();
+      break;
+  }
+}
 setListeners();
